@@ -29,6 +29,7 @@ $(function() {
         it('url is defined', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
+                expect(feed.url.length).not.toBe(0);
             });
         });
         /* This is the last test in this suite - it is a test that loops
@@ -38,6 +39,7 @@ $(function() {
         it('name is defined', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.name).toBeDefined();
+                expect(feed.name.length).not.toBe(0);
             });
         });
     });
